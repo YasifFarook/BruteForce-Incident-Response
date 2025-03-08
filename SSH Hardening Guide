@@ -1,0 +1,51 @@
+<h1>Security Enhancements and Remediation</h1>
+
+An effective recovery process for this attack would involve a process that minimises attack vectors that the simulated brute-force attack pointed out. These include:
+
+- Open ports allowing unauthorised access
+- Weak passwords
+- Lack of limits on login attempts
+
+To address this, SSH was disabled for unnecessary users, and maximum authentication attempts was reduced to 3. Refer below for remediation steps:
+
+* Hardening SSH Configuration:
+
+- Modified SSH settings to enforce stricter authentication controls
+
+- Using sudo nano /etc/ssh/sshd_config, the text file was edited as such:
+
+#MaxAuthTries was set to 3 (Limit login attempts to 3)
+#PermitRootLogin no (Disable root login)
+AllowUsers kali (Restrict SSH access to other unauthorised users)
+
+
+
+Restart SSH service to apply changes:
+
+
+
+Be sure to verify user access, by logging in with the user’s credentials. This is to ensure access is allowed. Also attempt to log in with any other user account, in order to verify that SSH access is denied.
+
+<h2>Further Recommendations:</h2>
+
+4.3.1 Firewall Configuration (UFW & iptables):
+
+Firewalls - It is worth considering configuring the system’s firewall (e.g., ufw or iptables) to further restrict access.
+
+sudo ufw allow from 192.168.1.100 to any port 22
+
+sudo iptables -A INPUT -p tcp --dport 22 -m limit --limit 3/min -j ACCEPT
+
+Monitoring and Logging Enhancements:
+
+Enabled real-time alerts for failed login attempts:
+sudo journalctl -u ssh --since "1 hour ago"
+
+Configured Splunk to detect brute-force patterns and generate automated alerts.
+
+<h2>Future Security Considerations:</h2>
+
+- Periodic penetration testing to identify potential vulnerabilities.
+- Multi-Factor Authentication (MFA) enforcement for SSH access.
+- Automated intrusion detection systems (IDS) and honeypots for real-time attack mitigation.
+- Public Key Authentication: For further security measures, consider using public key authentication and disabling password-based logins by setting PasswordAuthentication no in the sshd_config file.
