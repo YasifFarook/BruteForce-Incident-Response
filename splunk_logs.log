@@ -1,0 +1,7 @@
+2025-03-07 08:15:23,234 INFO  [auth] User 'yasif' logged in from IP 192.168.1.101
+2025-03-07 08:17:12,567 WARN  [webserver] High response time detected for request /dashboard (987ms)
+2025-03-07 08:19:45,123 ERROR [database] Connection timeout for query SELECT * FROM users
+2025-03-07 08:22:30,789 INFO  [firewall] Allowed outbound connection to 203.0.113.42 on port 443
+2025-03-07 08:25:14,654 INFO  [auth] User 'admin' failed login attempt from 10.0.0.15
+2025-03-07 08:28:59,321 WARN  [system] Disk usage at 92% on /dev/sda1
+2025-
