@@ -24,7 +24,7 @@ Develop a structured incident response playbook for security teams.
 
 - Nmap (Network scanning & enumeration)
 
-- Splunk SIEM (Security log analysis & visualization)
+- Splunk SIEM (Security log analysis & visualisation)
 
 - Linux SSH Service (Targeted system component)
 
@@ -34,7 +34,7 @@ Develop a structured incident response playbook for security teams.
 
  * Used Hydra to execute a brute-force attack on SSH authentication.
 
- * Monitored real-time logs to detect unauthorized login attempts.
+ * Monitored real-time logs to detect unauthorised login attempts.
 
 2️⃣ Log Analysis with Splunk
 
@@ -42,7 +42,7 @@ Collected and ingested log data into Splunk SIEM.
 
  * Filtered logs to identify failed login attempts and security gaps.
 
- * Created Splunk dashboards to visualize brute-force attack patterns.
+ * Created Splunk dashboards to visualise brute-force attack patterns.
 
 3️⃣ Security Enhancements & Remediation
 
@@ -58,7 +58,7 @@ Collected and ingested log data into Splunk SIEM.
 
  * No real-time alerts were triggered, exposing logging deficiencies.
 
- * Lack of automated SIEM alerting allowed prolonged unauthorized access attempts.
+ * Lack of automated SIEM alerting allowed prolonged unauthorised access attempts.
 
 🔧 How to Use This Repository
 
