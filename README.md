@@ -64,25 +64,25 @@ Collected and ingested log data into Splunk SIEM.
 
 Clone the repo:
 
-git clone https://github.com/YOUR_GITHUB_USERNAME/BruteForce-Incident-Response.git
+git clone https://github.com/YasifFarook/BruteForce-Incident-Response.git
 
 Navigate into the directory:
 
-cd BruteForce-Incident-Response
+_cd BruteForce-Incident-Response_
 
 Review key files:
 
-/report/ - Contains the full cybersecurity report.
+_/report/_ - Contains the full cybersecurity report.
 
-/logs/ - Raw log files from the attack simulation.
+_/logs/_ - Raw log files from the attack simulation.
 
-/scripts/ - Automation scripts used for log parsing.
+_/scripts/_ - Automation scripts used for log parsing.
 
-/remediation/ - Security hardening guides and configurations.
+_/remediation/_ - Security hardening guides and configurations.
 
 📸 Screenshots & Reports
 
-Links to complimentary project files (Logs, Splunk Reports and Dashboard): https://drive.google.com/drive/folders/1WXQyBjBruXB3A1d76UP_TCkiIUl61_zE?usp=drive_link
+Log reports are large in size and require separate viewing. Links to complimentary project files (Logs, Splunk Reports and Dashboard): https://drive.google.com/drive/folders/1WXQyBjBruXB3A1d76UP_TCkiIUl61_zE?usp=drive_link
 
 📚 Next Steps
 
